@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    position: relative;
+    padding-top: 70px;
+}
+
+#topbar {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #f4b607;
+    box-shadow: 0px 5px 10px -1px #999;
+}
+
+#topbar h1 {
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#curtain {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+    display: none;
+}
+
+#input-form-holder {
+    position: relative;
+    background-color: white;
+    width: 70%;
+    max-width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    box-shadow: 0px 5px 10px -1px #999;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#input-note {
+    display: block;
+    width: 90%;
+    height: 510px;
+    margin: 15px auto;
+    padding: 10px;
+    border: none;
+    resize: none;
+}
+
+#input-buttons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+
+#input-buttons * {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#input-done {
+    background-color: #eee;
+    color: #999;
+}
+
+#input-delete {
+    background-color: #b00020;
+    color: white;
+}
+
+#notes {
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#notes .note {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+    transition: 0.2s all;
+    cursor: pointer;
+    max-height: 300px;
+}
+
+#notes .note:hover {
+    box-shadow: 0px 5px 10px -1px #999;
+    transition: 0.2s all;
+}
+
+#new-note {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: #f4b607;
+    font-size: 32px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 3px 10px -1px #999;
+    cursor: pointer;
+}

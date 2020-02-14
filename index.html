@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>objKeep</title>
+
+    <!-- LOCAL STYLES -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header id="topbar">
+        <h1>objKeep</h1>
+    </header>
+
+    <div id="curtain" class="hidden">
+        <div id="input-form-holder">
+            <textarea id="input-note" placeholder="Take a note..." 
+                spellcheck="true"></textarea>
+            <section id="input-buttons">
+                <button id="input-done" onclick="saveNote()">Done</button>
+                <button id="input-delete" onclick="deleteNote()">Delete</button>
+            </section>
+        </div>
+    </div>
+
+    <section id="notes"></section>
+
+    <button id="new-note" onclick="openNote('')">+</button>
+    
+    <!-- LOCAL SCRIPTS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
